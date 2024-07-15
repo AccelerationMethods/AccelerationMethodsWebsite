@@ -1,0 +1,54 @@
+name: Generate PDF
+
+on:
+  push:
+    branches:
+      - gh-pages  # Replace with your default branch if different
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      
+    - name: Update cache_buster in _config.yml
+      run: |
+        chmod +x update_version.sh
+        ./update_version.sh
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+        
+    - name: Install pdflatex
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y texlive texlive-latex-extra texlive-xetex
+        
+    - name: Install Pandoc
+      if: steps.cache-pandoc.outputs.cache-hit != 'true'
+      run: sudo apt-get install -y pandoc
+
+    - name: Install pypandoc
+      run: |
+        python -m pip install --upgrade pip
+        pip install pypandoc
+
+    - name: Run PDF generation script
+      run: python generate_pdf.py
+
+    - name: Commit and push PDF
+      run: |
+        git config --global user.name 'github-actions'
+        git config --global user.email 'github-actions@github.com'
+        git pull origin gh-pages
+        mv -f output.pdf acceleration_monograph_erratas.pdf
+        mv -f combined.md _monographtypos/combined.md
+        git add acceleration_monograph_erratas.pdf _monographtypos/combined.md
+        git commit -m "Update generated PDF"
+        git push origin gh-pages
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

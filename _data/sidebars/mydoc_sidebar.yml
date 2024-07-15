@@ -1,0 +1,80 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: Table of Contents
+  version:
+  folders:
+  
+  - title: "Erratas"
+    output: web, pdf
+    folderitems:
+    
+    - title: "All chapters"
+      url: /AllChapters.html
+      output: web, pdf
+      type: pages
+    
+    - title: "1. Introduction"
+      url: /Introduction.html
+      output: web, pdf
+      type: pages
+
+    - title: "2. Chebyshev Acceleration"
+      url: /ChebyshevAcceleration.html
+      output: web, pdf
+      type: pages
+
+
+    - title: "3. Nonlinear Acceleration"
+      url: /NonlinearAcceleration.html
+      output: web, pdf
+
+    - title: "4. Nesterov Acceleration"
+      url: /NesterovAcceleration.html
+      output: web, pdf
+
+    - title: "5. Proximal Acceleration and Catalyst"
+      output: web, pdf
+      url: /ProximalAccelerationandCatalyst.html
+
+    - title: "6. Restart Schemes"
+      output: web, pdf
+      url: /RestartSchemes.html
+    
+    - title: "A. Useful Inequalities"
+      output: web, pdf
+      url: /UsefulInequalities.html
+    
+    - title: "B. Variations on Nesterov Acceleration"
+      output: web, pdf
+      url: /VariationsonNesterovAcceleration.html
+    
+    - title: "C. On Worst-case Analyses for First-order Methods"
+      output: web, pdf
+      url: /OnWorst-caseAnalysesforFirst-orderMethods.html
+    
+    - title: "Acknowledgements"
+      output: web, pdf
+      url: /Acknowledgements.html
+    
+    - title: "References"
+      output: web, pdf
+      url: /References.html
+      
+     
+  - title: "Downloads"
+    output: web, pdf
+    folderitems:
+    
+    - title: "Monograph (Arxiv version)"
+      output: web, pdf
+      url: "/acceleration_monograph_v3.pdf"
+    
+    - title: "Erratas (Pdf version)"
+      output: web, pdf
+      url: "/acceleration_monograph_erratas.pdf"
+
+
+
+  

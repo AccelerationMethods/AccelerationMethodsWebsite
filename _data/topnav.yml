@@ -1,0 +1,26 @@
+## Topnav single links
+## if you want to list an external url, use external_url instead of url. the theme will apply a different link base.
+topnav:
+- title: Topnav
+  items:
+    - title: Monograph FnT
+      external_url: https://www.nowpublishers.com/article/Details/OPT-036
+    - title: Arxiv
+      external_url: https://arxiv.org/abs/2101.09545
+    - title: GitHub
+      external_url: https://github.com/windows7lover/Acceleration-Methods
+
+#Topnav dropdowns
+#topnav_dropdowns:
+#- title: Topnav dropdowns
+#  folders:
+#    - title: Links
+#      folderitems:
+#        - title: Link1
+#          external_url: http://notsosecure.com
+#        - title: Link2
+#          external_url: http://notsosecure.com
+#        - title: Link3
+#          external_url: http://notsosecure.com
+#        - title: Link4
+#          external_url: http://notsosecure.com
