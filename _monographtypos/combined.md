@@ -1,7 +1,5 @@
 # Erratum in Chapter 1. Introduction
 
-test
-
 No typo found so far!
 
 # Erratum in Chapter 2. Chebyshev Acceleration
