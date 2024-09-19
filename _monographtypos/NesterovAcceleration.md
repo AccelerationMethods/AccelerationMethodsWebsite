@@ -10,6 +10,4 @@ folder: monograph
 
 # Erratum in Chapter 4. Nesterov Acceleration
 
-test
-
 No typo found so far!
