@@ -13,7 +13,10 @@ This website contains the notes and errata from the following monograph,
 
 [Click here to download the pdf containg all errors.](acceleration_monograph_erratas.pdf)
 
-This monograph covers some recent advances in a range of acceleration techniques frequently used in convex optimization, namely the *Chebyshev Acceleration*, *Nonlinear Acceleration*, *Nesterov Acceleration/Optimizedc Gradient Methods*, *Accelerated Hybrid Proximal Extragradient/Catalyst* frameworks and *Restart* strategies. You can download a version of the monograph on [ArXiv](https://arxiv.org/abs/2101.09545).
+This monograph covers some recent advances in a range of acceleration techniques frequently used in convex optimization, namely the *Chebyshev Acceleration*, *Nonlinear Acceleration*, *Nesterov Acceleration/Optimizedc Gradient Methods*, *Accelerated Hybrid Proximal Extragradient/Catalyst* frameworks and *Restart* strategies. You can download 
+- the [ArXiv](https://arxiv.org/abs/2101.09545) version,
+- the [corrected](https://accelerationmethods.github.io/AccelerationMethodsWebsite/acceleration_monograph_corrected.pdf) version,
+- the [list of erratas](https://accelerationmethods.github.io/AccelerationMethodsWebsite/acceleration_monograph_erratas.pdf).
 
 Feel free to e-mail us if you spot any typo or mistakes.
 
